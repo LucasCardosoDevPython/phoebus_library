@@ -5,3 +5,10 @@ spring:
     password: 1234
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
+logging:
+  level:
+    root: INFO
+    org:
+      hibernate: WARN
+      hibernate.SQL: DEBUG
+      hibernate.type.descriptor.sql.BasicBinder: TRACE

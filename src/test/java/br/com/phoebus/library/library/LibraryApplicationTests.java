@@ -1,7 +1,14 @@
 package br.com.phoebus.library.library;
 
-import br.com.phoebus.library.library.domain.entity.*;
-import br.com.phoebus.library.library.domain.repository.*;
+import br.com.phoebus.library.library.book.Book;
+import br.com.phoebus.library.library.book.BookRepository;
+import br.com.phoebus.library.library.caregory.CategoryRepository;
+import br.com.phoebus.library.library.cart.Cart;
+import br.com.phoebus.library.library.cart.CartRepository;
+import br.com.phoebus.library.library.cartItem.CartItem;
+import br.com.phoebus.library.library.cartItem.CartItemRepository;
+import br.com.phoebus.library.library.client.Client;
+import br.com.phoebus.library.library.client.ClientRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 class LibraryApplicationTests {
 
 	@Autowired
-	ClientRepository repositorioCliente;
+    ClientRepository repositorioCliente;
 	@Autowired
 	BookRepository repositorioLivros;
 	@Autowired
